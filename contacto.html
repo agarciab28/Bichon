@@ -10,6 +10,9 @@
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4RpJc-sUEO1tVPZlV-w6yz5kH5AckrTQ&callback=initMap"
+    async defer></script>
     <title>Veterinaria Bichon</title>
 </head>
 
@@ -54,6 +57,45 @@
               </form>
           </div>
       </nav>
+
+    <!-- Mapa -->
+    <div id="map">
+      <h1 class="display-4">Puedes encontrarnos en:</h1>
+        <div id="mapa" class="mapa"></div>
+    </div>
+
+    <!-- Info Redes Sociales -->
+    <div id="cards" class="card-group">
+      <div id="facebook" class="card">
+        <img class="card-img-top" src="/img/facebook.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Facebook</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <div id="twitter" class="card">
+        <img class="card-img-top" src="/img/twitter.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Twitter</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div id="instagram" class="card">
+        <img class="card-img-top" src="/img/instagram.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Instagram</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+      <div id="youtube" class="card">
+        <img class="card-img-top" src="/img/youtube.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">YouTube</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+    </div>
+
 
       <!-- Pie de pagina -->
           <footer class="footer" id="footer-contacto">

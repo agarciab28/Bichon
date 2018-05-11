@@ -57,6 +57,23 @@ $(document).ready(function(){
     }
   });
 
+  $("#facebook").click(function(){
+      window.location.href = "http://www.facebook.com";
+  });
+
+  $("#twitter").click(function(){
+      window.location.href = "http://www.twitter.com";
+  });
+
+  $("#instagram").click(function(){
+      window.location.href = "http://www.instagram.com";
+  });
+
+  $("#youtube").click(function(){
+      window.location.href = "http://www.youtube.com";
+  });
+
   $('.img_flecha').css( 'cursor', 'pointer' );
+  $('.card-group').css( 'cursor', 'pointer' );
 
 });

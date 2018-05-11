@@ -25,6 +25,17 @@ img{
     padding: 5rem 0;
 }
 
+#map{
+  position:relative;
+  top:70px;
+  text-align:center;
+}
+
+#cards{
+  position:relative;
+  top:70px;
+}
+
 #acerca-de{
     background: url('../img/diez.jpg') center center no-repeat;
     background-size: cover;
@@ -33,21 +44,29 @@ img{
 #infoHospedaje{
     background: url('../img/uno.jpg') no-repeat;
     background-size: cover;
+    position:relative;
+    top:55px;
 }
 
 #infoLimpieza{
     background: url('../img/cinco.jpg') no-repeat;
     background-size: cover;
+    position:relative;
+    top:55px;
 }
 
 #infoAtropellados{
     background: url('../img/ocho.jpg') no-repeat;
     background-size: cover;
+    position:relative;
+    top:55px;
 }
 
 #infoFuneraria{
     background: url('../img/siete.jpg') no-repeat;
     background-size: cover;
+    position:relative;
+    top:55px;
 }
 
 .texto-acerca-de{
@@ -68,6 +87,21 @@ img{
     top:100px;
 }
 
+#footer-contacto{
+    position:relative;
+    top:60px;
+}
+
+#footer-info{
+  position:relative;
+  top:55px;
+}
+
 div.form-group{
     padding-right: 1rem;
+}
+
+div.mapa{
+  height:420px;
+  background-color:green;
 }
