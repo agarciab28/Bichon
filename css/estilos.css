@@ -30,18 +30,44 @@ img{
     background-size: cover;
 }
 
+#infoHospedaje{
+    background: url('../img/uno.jpg') no-repeat;
+    background-size: cover;
+}
+
+#infoLimpieza{
+    background: url('../img/cinco.jpg') no-repeat;
+    background-size: cover;
+}
+
+#infoAtropellados{
+    background: url('../img/ocho.jpg') no-repeat;
+    background-size: cover;
+}
+
+#infoFuneraria{
+    background: url('../img/siete.jpg') no-repeat;
+    background-size: cover;
+}
+
 .texto-acerca-de{
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 1.875rem;
 }
 
-#footer-main{
+.footer{
     background: #222;
     color: white;
     font-size: 0.8rem;
     padding: 2.5rem 0;
 }
+
+#footer-galeria{
+    position:relative;
+    top:100px;
+}
+
 div.form-group{
     padding-right: 1rem;
 }

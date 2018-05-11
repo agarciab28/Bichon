@@ -22,6 +22,7 @@ img {
           justify-content: space-between;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  top: 100px;
 }
 .gallery.pop {
   -webkit-filter: blur(10px);

@@ -5,7 +5,7 @@ $(document).ready(function(){
   var state4 = 0;
 
 
-  $("#hospedaje").click(function(){
+  $("#flecha1").click(function(){
     if(state1 == 0){
       $("#phosp").fadeIn();
       $('#flecha1').attr('src', '/img/flecha_abajo.png')
@@ -18,7 +18,7 @@ $(document).ready(function(){
     }
   });
 
-  $("#limpieza").click(function(){
+  $("#flecha2").click(function(){
     if(state2 == 0){
       $("#plimp").fadeIn();
       $('#flecha2').attr('src', '/img/flecha_abajo.png')
@@ -31,7 +31,7 @@ $(document).ready(function(){
     }
   });
 
-  $("#atropellado").click(function(){
+  $("#flecha3").click(function(){
     if(state3 == 0){
       $("#patro").fadeIn();
       $('#flecha3').attr('src', '/img/flecha_abajo.png')
@@ -44,7 +44,7 @@ $(document).ready(function(){
     }
   });
 
-  $("#funerario").click(function(){
+  $("#flecha4").click(function(){
     if(state4 == 0){
       $("#pfune").fadeIn();
       $('#flecha4').attr('src', '/img/flecha_abajo.png')
@@ -57,6 +57,6 @@ $(document).ready(function(){
     }
   });
 
-  $('.carousel-inner').css( 'cursor', 'pointer' );
+  $('.img_flecha').css( 'cursor', 'pointer' );
 
 });
