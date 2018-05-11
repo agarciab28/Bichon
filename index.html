@@ -7,8 +7,9 @@
     <link rel="shortcut icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/estilos.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
     <title>Veterinaria Bichon</title>
 </head>
 
@@ -73,27 +74,55 @@
                 <li data-target="#carrusel-home" data-slide-to="0" class="active"></li>
                 <li data-target="#carrusel-home" data-slide-to="1"></li>
                 <li data-target="#carrusel-home" data-slide-to="2"></li>
+                <li data-target="#carrusel-home" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/tres.jpg" alt="Labrador bebe">
+                    <img class="d-block w-100" id="hospedaje" src="img/tres.jpg" alt="Labrador bebe">
                     <div class="carousel-caption">
-                        <h3>Labrador cachorro</h3>
-                        <p>Fotografia profesional</p>
+                      <img src="img/flecha_arriba.png" id="flecha1">
+                        <h3>Servicio de Hospedaje</h3>
+                        <p id="phosp" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                          culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/cinco.jpg" alt="Perro y gato juntos">
+                <div class="carousel-item" >
+                    <img class="d-block w-100" id="limpieza" src="img/cinco.jpg" alt="Perro y gato juntos">
                     <div class="carousel-caption">
-                        <h3>Perro y gato juntos</h3>
-                        <p>Fotografia profesional</p>
+                      <img src="img/flecha_arriba.png" id="flecha2">
+                        <h3>Servicio de Limpieza</h3>
+                        <p id="plimp" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                          culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/seis.jpg" alt="Labrador adulto">
+                <div class="carousel-item" >
+                    <img class="d-block w-100" id="atropellado" src="img/seis.jpg" alt="Labrador adulto">
                     <div class="carousel-caption">
-                        <h3>Labrador adulto</h3>
-                        <p>Fotografia profesional</p>
+                      <img src="img/flecha_arriba.png" id="flecha3">
+                        <h3>Especializacion en perros y gatos atropellados</h3>
+                        <p id="patro" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                          culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" >
+                    <img class="d-block w-100" id="funerario" src="img/siete.jpg" alt="Labrador adulto">
+                    <div class="carousel-caption">
+                      <img src="img/flecha_arriba.png" id="flecha4">
+                        <h3>Servicios funerarios</h3>
+                        <p id="pfune" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                          culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
@@ -105,60 +134,6 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Siguiente</span>
       </a>
-        </div>
-    </section>
-
-    <section id="empresa">
-        <div class="contenido-seccion">
-            <div class="container">
-                <h2>Acerca de veterinaria</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card-group">
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Dogarden</h5>
-                                    <h6 class="card-subtitle">El lugar mas comodo</h6>
-                                </div>
-                                <img class="card-img-top" src="img/siete.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <p class="card-text">Te da la bienvenida a un nuevo hogar para nuestros mejores amigos, contamos con un espacio abierto para que ellos puedan correr, jugar, saltar y socializar con otros amigos en nuestras dinámicas recreativas y amorosas.</p>
-                                    <button class="btn btn-primary" data-toggle="modal"  data-target="#myModal">Ver mas</button>
-                                </div>
-                            </div>
-
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Spa</h5>
-                                    <h6 class="card-subtitle">Conciente tu mascota</h6>
-                                </div>
-                                <img class="card-img-top" src="img/ocho.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <p class="card-text">En spavet consentimos a nuestros mejores amigos, los bañamos con agua calientita, se les dan masajes con gomas especiales para que se relajen y así puedan liberar completamente el estrés. Todos nuestros paquetes incluyen revisión médica general.</p>
-                                    <button class="btn btn-primary" data-toggle="modal"  data-target="#myModal">Ver mas</button>
-                                </div>
-                            </div>
-
-                            <div class="card">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Veterinaria</h5>
-                                    <h6 class="card-subtitle">Cuidamos a tu amigo</h6>
-                                </div>
-                                <img class="card-img-top" src="img/cuatro.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <p class="card-text">Somos un equipo de atención médica veterinaria que busca el bienestar de tu mascota, mediante la medicina preventiva y especializada. Nuestro análisis clínico y atención es lo que nos permite ofrecer un diagnóstico especificó.</p>
-                                    <button class="btn btn-primary" data-toggle="modal"  data-target="#myModal">Ver mas</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -186,7 +161,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <h3>Dr. Herman Toledo</h3>
-                    <p>Acerca del veeterinario <a href="http://google.com">Google</a></p>
+                    <p>Acerca del veterinario <a href="http://google.com">Google</a></p>
                 </div>
                 <div class="col-sm-3">
                     <ul class="list-unstyled">
