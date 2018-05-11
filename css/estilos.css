@@ -6,7 +6,7 @@ img{
 }
 /* cover */
 #cover{
-    background: #222 url('../img/dos.jpg') center center no-repeat;
+    background: #222 url('../img/dos.jpg') no-repeat;
     background-size: cover;
     color: white;
     height: 100%;
