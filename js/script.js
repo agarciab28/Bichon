@@ -8,12 +8,12 @@ $(document).ready(function(){
   $("#flecha1").click(function(){
     if(state1 == 0){
       $("#phosp").fadeIn();
-      $('#flecha1').attr('src', '/img/flecha_abajo.png')
+      $('#flecha1').attr('src', '/img/icon/flecha_abajo.png')
       state1 = 1
     }
     else {
       $("#phosp").fadeOut();
-      $('#flecha1').attr('src', '/img/flecha_arriba.png')
+      $('#flecha1').attr('src', '/img/icon/flecha_arriba.png')
       state1 = 0
     }
   });
@@ -21,12 +21,12 @@ $(document).ready(function(){
   $("#flecha2").click(function(){
     if(state2 == 0){
       $("#plimp").fadeIn();
-      $('#flecha2').attr('src', '/img/flecha_abajo.png')
+      $('#flecha2').attr('src', '/img/icon/flecha_abajo.png')
       state2 = 1
     }
     else {
       $("#plimp").fadeOut();
-      $('#flecha2').attr('src', '/img/flecha_arriba.png')
+      $('#flecha2').attr('src', '/img/icon/flecha_arriba.png')
       state2 = 0
     }
   });
@@ -34,12 +34,12 @@ $(document).ready(function(){
   $("#flecha3").click(function(){
     if(state3 == 0){
       $("#patro").fadeIn();
-      $('#flecha3').attr('src', '/img/flecha_abajo.png')
+      $('#flecha3').attr('src', '/img/icon/flecha_abajo.png')
       state3 = 1
     }
     else {
       $("#patro").fadeOut();
-      $('#flecha3').attr('src', '/img/flecha_arriba.png')
+      $('#flecha3').attr('src', '/img/icon/flecha_arriba.png')
       state3 = 0
     }
   });
@@ -47,12 +47,12 @@ $(document).ready(function(){
   $("#flecha4").click(function(){
     if(state4 == 0){
       $("#pfune").fadeIn();
-      $('#flecha4').attr('src', '/img/flecha_abajo.png')
+      $('#flecha4').attr('src', '/img/icon/flecha_abajo.png')
       state4 = 1
     }
     else {
       $("#pfune").fadeOut();
-      $('#flecha4').attr('src', '/img/flecha_arriba.png')
+      $('#flecha4').attr('src', '/img/icon/flecha_arriba.png')
       state4 = 0
     }
   });
@@ -74,6 +74,6 @@ $(document).ready(function(){
   });
 
   $('.img_flecha').css( 'cursor', 'pointer' );
-  $('.card-group').css( 'cursor', 'pointer' );
+  $('#cardsRedes').css( 'cursor', 'pointer' );
 
 });

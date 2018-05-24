@@ -6,18 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/img/favicon.ico" />
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/magnific-popup.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="/css/estilos.css">
-  <link rel="stylesheet" href="/css/galeria.css">
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <title>Veterinaria Bichon</title>
+  <title>Veterinaria Bichón</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
 </head>
 
 <body>
   <!-- Navbar -->
       <nav class="navbar navbar-expand-sm fixed-top">
         <a class="navbar-brand" href="/index.html"><img src="/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-  Bichon</a>
+  Bichón</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,14 +37,14 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/hospedaje.html">Hospedaje</a>
                         <a class="dropdown-item" href="/limpieza.html">Limpieza</a>
-                        <a class="dropdown-item" href="/atropellados.html">Atropellados</a>
+                        <a class="dropdown-item" href="/atropellados.html">Atropellos</a>
                         <a class="dropdown-item" href="/funeraria.html">Funeraria</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/productos.html">Productos</a>
                       </div>
                   </li>
                   <li class="nav-item active">
-                      <a class="nav-link" href="#">Galeria</a>
+                      <a class="nav-link" href="#">Galería</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="contacto.html">Contacto</a>
@@ -55,7 +57,7 @@
       </nav>
 
 <!-- Galeria -->
-      <div class="container">
+      <!-- <div class="container">
       	<div class="row">
           <div class="gallery">
             <figure>
@@ -142,7 +144,80 @@
       popup.init()
       </script>
     </div>
-  </div>
+  </div> -->
+
+  <!-- portfolio section start -->
+	<section class="portfolio-section">
+		<div class="container" id="filtro">
+			<ul class="portfolio-filter controls">
+				<li class="control" data-filter="all">Todas</li>
+				<li class="control" data-filter=".dog">Perros</li>
+				<li class="control" data-filter=".cat">Gatos</li>
+				<li class="control" data-filter=".bird">Aves</li>
+			</ul>
+		</div>
+		<div class="container-fluid p-md-0 ">
+			<div class="row portfolios-area">
+				<div class="mix col-lg-6 col-md-6 dog">
+					<a href="img/uno.jpg" class="portfolio-item set-bg" data-setbg="img/uno.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 dog">
+					<a href="img/dos.jpg" class="portfolio-item set-bg " data-setbg="img/dos.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 cat">
+					<a href="img/tres.jpg" class="portfolio-item set-bg" data-setbg="img/tres.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 bird">
+					<a href="img/cuatro.jpg" class="portfolio-item set-bg" data-setbg="img/cuatro.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 bird">
+					<a href="img/cinco.jpg" class="portfolio-item set-bg" data-setbg="img/cinco.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-12 col-md-6 dog">
+					<a href="img/seis.jpg" class="portfolio-item set-bg" data-setbg="img/seis.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 cat">
+					<a href="img/siete.jpg" class="portfolio-item set-bg" data-setbg="img/siete.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 bird">
+					<a href="img/ocho.jpg" class="portfolio-item set-bg" data-setbg="img/ocho.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- portfolio section end -->
 
       <!-- Pie de pagina -->
             <footer class="footer" id="footer-galeria">
@@ -171,12 +246,18 @@
                             </ul>
                         </div>
                         <div class="col-sm-3">
-                            <h3>Contactenos</h3>
+                            <h3>Contáctenos</h3>
                             <li><a class="urlFooter" href="">Teléfono: 55 (443) 324 20 46</a></li>
                             <li><a class="urlFooter" href="https://bit.ly/2wuHzwR">Dirección: Huitzilihuitl 485 Ejidal Ocolusen Morelia Michoacán</a></li>
                         </div>
                     </div>
                 </div>
             </footer>
+
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/mixitup.min.js"></script>
+          	<script src="js/magnific-popup.min.js"></script>
+          	<script src="js/main.js"></script>
       </body>
 </html>

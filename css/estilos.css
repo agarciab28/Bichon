@@ -1,15 +1,23 @@
 html,body{
     height: 100%;
+    font-family: "Decker Bold";
 }
 img{
     max-width: 100%;
 }
+
+@font-face {
+  font-family:"Decker Bold";
+  src:url("DeckerB.eot?") format("eot"),url("DeckerB.woff") format("woff"),url("DeckerB.ttf") format("truetype"),url("DeckerB.svg#") format("svg");
+  font-weight:normal;font-style:normal;
+}
+
 /* cover */
 #cover{
     background: #222 url('../img/dos.jpg') no-repeat;
     background-size: cover;
     color: white;
-    height: 80%;
+    height: 100%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -17,9 +25,12 @@ img{
 #cover-texto{
     width: 100%;
 }
+
 #cover-texto .form-inline{
     padding: 5rem 0;
 }
+
+
 
 
 .contenido-seccion{
@@ -32,9 +43,17 @@ img{
   text-align:center;
 }
 
-#cards{
+#titleAnimales{
   position:relative;
-  top:70px;
+  top:40px;
+  text-align:center;
+}
+
+#sectionAnimales {
+  position:relative;
+    width: 70%;
+    text-align:center;
+    margin: auto;
 }
 
 #acerca-de{
@@ -96,6 +115,18 @@ img{
 #footer-info{
   position:relative;
   top:55px;
+}
+
+#footer-main{
+  position:relative;
+  top:75px;
+}
+
+.card-group{
+  text-align: justify;
+  text-justify: inter-word;
+  position:relative;
+  top:70px;
 }
 
 .urlFooter{
