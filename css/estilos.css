@@ -191,7 +191,13 @@ div.mapa{
   background-color: #28922A;
 }
 
+.title-product{
+  background: rgba(0, 0, 0, 0.8);
+  color: #28922A;
+  padding: 10px;
+}
 
+/*1.875rem*/
 
 
 /*Navbar*/
