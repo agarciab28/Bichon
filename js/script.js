@@ -12,7 +12,7 @@ $(document).ready(function(){
       state1 = 1
     }
     else {
-      $("#phosp").fadeOut();
+      $("#phosp").fadeOut("fast");
       $('#flecha1').attr('src', '/img/icon/flecha_arriba.png')
       state1 = 0
     }
@@ -25,7 +25,7 @@ $(document).ready(function(){
       state2 = 1
     }
     else {
-      $("#plimp").fadeOut();
+      $("#plimp").fadeOut("fast");
       $('#flecha2').attr('src', '/img/icon/flecha_arriba.png')
       state2 = 0
     }
@@ -38,7 +38,7 @@ $(document).ready(function(){
       state3 = 1
     }
     else {
-      $("#patro").fadeOut();
+      $("#patro").fadeOut("fast");
       $('#flecha3').attr('src', '/img/icon/flecha_arriba.png')
       state3 = 0
     }
@@ -51,7 +51,7 @@ $(document).ready(function(){
       state4 = 1
     }
     else {
-      $("#pfune").fadeOut();
+      $("#pfune").fadeOut("fast");
       $('#flecha4').attr('src', '/img/icon/flecha_arriba.png')
       state4 = 0
     }
