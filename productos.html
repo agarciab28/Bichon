@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/img/logo/icon.png" />
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/magnific-popup.css"/>
+  <link rel="stylesheet" href="/css/style.css"/>
   <link rel="stylesheet" href="/css/estilos.css">
-  <link rel="stylesheet" href="/css/galeria.css">
   <title>Veterinaria Bichón</title>
 </head>
 
@@ -51,95 +52,77 @@
           </div>
       </nav>
 
-<!-- Galeria -->
-      <div class="container">
-      	<div class="row">
-          <div class="gallery">
-            <figure>
-              <img src="/img/uno.jpg" alt="" />
-              <figcaption>Perro <small>Uno</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/dos.jpg" alt="" />
-              <figcaption>Perro <small>Dos</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/tres.jpg" alt="" />
-              <figcaption>Perro<small>Tres</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/cuatro.jpg" alt="" />
-              <figcaption>Perro<small>Cuatro</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/cinco.jpg" alt="" />
-              <figcaption>Perro<small>Cinco</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/seis.jpg" alt="" />
-              <figcaption>Perro<small>Seis</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/siete.jpg" alt="" />
-              <figcaption>Perro<small>Siete</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/ocho.jpg" alt="" />
-              <figcaption>Perro<small>Ocho</small></figcaption>
-            </figure>
-            <figure>
-              <img src="/img/nueve.jpg" alt="" />
-              <figcaption>Perro<small>Nueve</small></figcaption>
-            </figure>
-        </div>
-
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
-        <symbol id="close" viewBox="0 0 18 18">
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
-      			S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
-      			l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
-      			c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
-      			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
-        </symbol>
-      </svg>
-      <script>
-      popup = {
-      init: function(){
-      $('figure').click(function(){
-        popup.open($(this));
-      });
-
-      $(document).on('click', '.popup img', function(){
-        return false;
-      }).on('click', '.popup', function(){
-        popup.close();
-      })
-      },
-      open: function($figure) {
-      $('.gallery').addClass('pop');
-      $popup = $('<div class="popup" />').appendTo($('body'));
-      $fig = $figure.clone().appendTo($('.popup'));
-      $bg = $('<div class="bg" />').appendTo($('.popup'));
-      $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
-      $shadow = $('<div class="shadow" />').appendTo($fig);
-      src = $('img', $fig).attr('src');
-      $shadow.css({backgroundImage: 'url(' + src + ')'});
-      $bg.css({backgroundImage: 'url(' + src + ')'});
-      setTimeout(function(){
-        $('.popup').addClass('pop');
-      }, 10);
-      },
-      close: function(){
-      $('.gallery, .popup').removeClass('pop');
-      setTimeout(function(){
-        $('.popup').remove()
-      }, 100);
-      }
-      }
-      popup.init()
-      </script>
-    </div>
-  </div>
+  <!-- Galeria -->
+	<section class="portfolio-section">
+		<div class="container" id="filtro">
+			<ul class="portfolio-filter controls">
+				<li class="control" data-filter="all">Todas</li>
+				<li class="control" data-filter=".dog">Perros</li>
+				<li class="control" data-filter=".cat">Gatos</li>
+				<li class="control" data-filter=".bird">Aves</li>
+			</ul>
+		</div>
+		<div class="container-fluid p-md-0 ">
+			<div class="row portfolios-area">
+				<div class="mix col-lg-6 col-md-6 dog">
+					<a href="/img/perros/uno.jpg" class="portfolio-item set-bg" data-setbg="/img/perros/uno.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 dog">
+					<a href="/img/perros/dos.jpg" class="portfolio-item set-bg " data-setbg="/img/perros/dos.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 cat">
+					<a href="/img/perros/tres.jpg" class="portfolio-item set-bg" data-setbg="/img/perros/tres.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 bird">
+					<a href="/img/perros/cuatro.jpg" class="portfolio-item set-bg" data-setbg="/img/perros/cuatro.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 bird">
+					<a href="/img/perros/cinco.jpg" class="portfolio-item set-bg" data-setbg="img/perros/cinco.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-12 col-md-6 dog">
+					<a href="/img/perros/seis.jpg" class="portfolio-item set-bg" data-setbg="/img/perros/seis.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 cat">
+					<a href="/img/perros/siete.jpg" class="portfolio-item set-bg" data-setbg="/img/perros/siete.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 bird">
+					<a href="/img/perros/ocho.jpg" class="portfolio-item set-bg" data-setbg="/img/perros/ocho.jpg">
+						<div class="pi-inner">
+							<h2>+ Ver Imagen</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
       <!-- Mapa -->
       <div id="map">
@@ -183,9 +166,11 @@
       </body>
 
       <!-- Scripts -->
-      <script src="/js/jquery-3.3.1.min.js"></script>
-      <script src="/js/bootstrap.min.js"></script>
-      <script src="/js/script.js"></script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/mixitup.min.js"></script>
+      <script src="js/magnific-popup.min.js"></script>
+      <script src="js/main.js"></script>
       <script src="/js/maps.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4RpJc-sUEO1tVPZlV-w6yz5kH5AckrTQ&callback=initMap"
       async defer></script>

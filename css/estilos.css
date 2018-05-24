@@ -14,7 +14,7 @@ img{
 
 /* cover */
 #cover{
-    background: #222 url('../img/bichon.jpg') no-repeat;
+    background: #222 url('../img/perros/bichon.jpg') no-repeat;
     background-size: cover;
     color: white;
     height: 100%;
@@ -53,6 +53,12 @@ img{
   text-align:center;
 }
 
+#mapIndex{
+  position:relative;
+  top:120px;
+  text-align:center;
+}
+
 #titleAnimales{
   position:relative;
   top:40px;
@@ -67,7 +73,7 @@ img{
 }
 
 #acerca-de{
-    background: url('../img/diez.jpg') center center no-repeat;
+    background: url('../img/perros/diez.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -103,6 +109,11 @@ img{
 #cardBlog{
   position:relative;
   top:50px;
+}
+
+#cardInfo{
+  position:relative;
+  top:100px;
 }
 
 .texto-acerca-de{
@@ -143,7 +154,16 @@ img{
   top:50px;
 }
 
-.card-group{
+#footer-acerca{
+  position:relative;
+  top:120px;
+}
+
+.card-title{
+  height:50px;
+}
+
+.card{
   text-align: justify;
   text-justify: inter-word;
   position:relative;
