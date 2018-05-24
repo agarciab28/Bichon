@@ -8,7 +8,7 @@ img{
 
 @font-face {
   font-family:"Decker Bold";
-  src:url("DeckerB.eot?") format("eot"),url("DeckerB.woff") format("woff"),url("DeckerB.ttf") format("truetype"),url("DeckerB.svg#") format("svg");
+  src:url("/../font/DeckerB.eot?") format("eot"),url("/../font/DeckerB.woff") format("woff"),url("/../font/DeckerB.ttf") format("truetype"),url("/../font/DeckerB.svg#") format("svg");
   font-weight:normal;font-style:normal;
 }
 
@@ -28,6 +28,11 @@ img{
 
 #cover-texto .form-inline{
     padding: 5rem 0;
+}
+
+#filtro{
+  position:relative;
+  top:50px;
 }
 
 
