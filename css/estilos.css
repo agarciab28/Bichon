@@ -120,6 +120,14 @@ img{
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 1.875rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.texto-cover{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1.875rem;
 }
 
 .footer{
@@ -198,6 +206,42 @@ div.mapa{
 }
 
 /*1.875rem*/
+
+/*Cookies*/
+#barraaceptacion {
+    display:none;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding-bottom:20px;
+    width:100%;
+    text-align:center;
+    min-height:40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#fff;
+    z-index:99999;
+}
+
+.inner {
+    width:100%;
+    position:absolute;
+    padding-left:5px;
+    font-size:12px;
+    top:30%;
+}
+
+.inner a.ok {
+    padding:4px;
+    color:#00ff2e;
+    text-decoration:none;
+}
+
+.inner a.info {
+    padding-left:5px;
+    text-decoration:none;
+    color:#faff00;
+}
 
 
 /*Navbar*/
