@@ -22,6 +22,27 @@ img{
     display: flex;
     align-items: center;
 }
+
+#cover_login{
+  background: #222 url('../img/perros/dos.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#cover_registro{
+  background: #222 url('../img/perros/tres.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
 #cover-texto{
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -36,6 +57,15 @@ img{
 #filtro{
   position:relative;
   top:50px;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
 
 .contenido-seccion{
@@ -167,6 +197,11 @@ img{
   top:120px;
 }
 
+#footer-index{
+  position:relative;
+  top:120px;
+}
+
 .card-title{
   height:50px;
 }
@@ -207,6 +242,44 @@ div.mapa{
 
 /*1.875rem*/
 
+.form{
+  width: 300px;
+  margin: 0 auto;
+}
+
+input[type='text'], input[type='email'], input[type='password'], select {
+  width: 200px;
+  border-radius: 2px;
+  border: 1px solid #CCC;
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+input[type='submit']{
+  padding: 10px 25px 8px;
+  color: #fff;
+  background-color: #28922a;
+  text-shadow: rgba(0,0,0,0.24) 0 1px 0;
+  font-size: 16px;
+  border: 1px solid #28922a;
+  border-radius: 2px;
+  margin-top: 10px;
+  cursor:pointer;}
+
+input[type='submit']:hover {
+  background-color: #075e09;
+}
+
+#botonEliminar{
+  background-image: url('/img/icon/eliminar.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  /*exactly the width and height of the image*/
+}
+
+
 /*Cookies*/
 #barraaceptacion {
     display:none;
@@ -242,7 +315,6 @@ div.mapa{
     text-decoration:none;
     color:#faff00;
 }
-
 
 /*Navbar*/
 
